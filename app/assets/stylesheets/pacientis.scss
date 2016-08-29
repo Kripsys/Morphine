@@ -1,0 +1,21 @@
+// Place all the styles related to the Pacientis controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.tabel_row{
+
+}
+
+.tabel_row .admin{
+	display:none;
+}
+
+.tabel_row.hover{
+		background: #e1e1e1;
+    border-top: 1px solid #d0d0d0;
+}
+
+.tabel_row.hover .admin{
+	display:inline;
+
+}

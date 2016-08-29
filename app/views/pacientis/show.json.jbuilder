@@ -1,0 +1,1 @@
+json.partial! "pacientis/pacienti", pacienti: @pacienti

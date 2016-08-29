@@ -1,0 +1,1 @@
+json.array! @pacientis, partial: 'pacientis/pacienti', as: :pacienti

@@ -1,0 +1,37 @@
+<%= form_for(pacienti) do |f| %>
+  <% if pacienti.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pacienti.errors.count, "error") %> prohibited this pacienti from being saved:</h2>
+
+      <ul>
+      <% pacienti.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nume %>
+    <%= f.text_field :nume %>
+  </div>
+
+  <div class="field">
+    <%= f.label :prenume %>
+    <%= f.text_field :prenume %>
+  </div>
+
+  <div class="field">
+    <%= f.label :varsta %>
+    <%= f.number_field :varsta %>
+  </div>
+
+  <div class="field">
+    <%= f.label :stare %>
+    <%= f.text_area :stare %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<div class="page-header">
+  <h1> Pacienti </h1>
+</div> 
+
+
+<div class="pacienti">
+
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Lista pacienti</div>
+
+    <!-- Table -->
+    <div >
+      <table class="table">
+        <thead>
+          <tr>  
+            <th>Nume </th> <th>Prenume</th> <th>Stare</th>  <th>Optiune</th> 
+          </tr> 
+        </thead>
+
+        <% @pacientis.each do |pacienti| %>
+        <tr class="tabel_row">  
+          <th scope="row"><%= pacienti.nume%> </th> <td><%= pacienti.prenume%></td> <td><%= pacienti.stare%> </td> 
+
+          <td>
+          <span class="admin">
+            <%= link_to "Editeaza", edit_pacienti_path(pacienti)%> | 
+            <%= link_to "Sterge", pacienti, method: :delete, data: { confirm: 'Esti sigur(a) ?' } %> 
+          </span>
+          </td> 
+
+        
+        </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<br>
+
+<%= link_to 'Adauga pacient', new_pacienti_path, class:"btn btn-primary"%>
