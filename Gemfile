@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'httparty', '0.13.5'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'heroku'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
